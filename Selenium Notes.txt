@@ -1,0 +1,11 @@
+**Selenium Webdriver
+-What is webdriver?
+-It is one of component in selenium
+-Webdriver is module
+-Webdriver is API (Application Programming Interface)
+
+**Architecture of WebDriver
+Selenium 3:
+-Selenium Language Binding->JSON Wire Protocol->Browser drivers->W3C->Browsers
+Selenium 4:
+-Selenium Language Bindings->W3C->Browser drivers->W3C->Browsers
