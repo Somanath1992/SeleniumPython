@@ -1,7 +1,7 @@
 **Selenium Webdriver
 -What is webdriver?
 -It is one of component in selenium
--Webdriver is module
+-Webdriver is module.It is available in selenium package
 -Webdriver is API (Application Programming Interface)
 
 **Architecture of WebDriver
@@ -9,3 +9,23 @@ Selenium 3:
 -Selenium Language Binding->JSON Wire Protocol->Browser drivers->W3C->Browsers
 Selenium 4:
 -Selenium Language Bindings->W3C->Browser drivers->W3C->Browsers
+
+*Test Sites for Testing
+-https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+-https://admin-demo.nopcommerce.com/login
+
+**Browser invoking:
+-In Selenium 4 instead of directly passing chromedriver path, we need to import Service class from chrome package
+-Then we need to create object of Service class and pass chromedriver path
+-If we don't want to specify driver path in our script then copy required drivers and paste it in python installation folder (C:\Users\Admin\AppData\Local\Programs\Python\Python312\Scripts)
+
+**Locators:
+1.id
+2.name
+3.linktext
+4.partiallinktext
+5.classname
+6.Tagname
+7.CSSselector
+8.Xpath-Absolute Xpath & Relative Xpath
+
