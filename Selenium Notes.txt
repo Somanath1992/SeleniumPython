@@ -27,5 +27,79 @@ Selenium 4:
 5.classname
 6.Tagname
 7.CSSselector
+-We have 4 different types of css selector combination as:
+a.tag id
+b.tag class
+c.tag attribute
+d.tag class attribute
+-Here the tag is optional
 8.Xpath-Absolute Xpath & Relative Xpath
+-XPath is defined as XML Path
+-It is a syntax or language for finding any element on the webpage using XML path expression
+-XPath is used to find the location of any element on a webpage using HTML DOM(Document Object Model) Structure
+-XPath can be used to navigate through elements and attributes in DOM
+-XPath is an address of the element
 
+**Difference Between Absolute and Relative XPath
+1.Absolute Xpath starts from root html node & Relative Xpath directly jump to element on DOM
+2.Absolute Xpath starts with '/' and Relative Xpath starts with '//'
+3.In Absolute Xpath we use only tags/nodes & In Relative Xpath we use attributes
+
+**Syntax of writing Xpath
+- //tagname[@attribute='value']
+
+**Methods and Operators in Xpath
+1.and operator:
+-syntax: //tagname[@attribute='value' and @anotherattribute='value']
+
+2.or operator:
+-syntax: //tagname[@attribute='value' or @anotherattribute='value']
+
+3.contains() method:
+-syntax: //tagname[contains(@attribute,'value')]
+
+4.starts-with() method:
+-syntax: //tagname[starts-with(@attribute,'value')]
+
+5.ends-with() method:
+-syntax: //tagname[ends-with(@attribute,'value')]
+
+6.text() method:
+-syntax: //tagname[text()='value']
+
+**Xpath Axes
+-By using Xpath Axes we can traverse through DOM Top to bottom or Bottom to top
+1.self
+-Each node itself is considered as self or self node
+2.parent
+-Node above the self node is called as parent node/element
+-Traverse parent element of the current html tag
+-syntax: //*[@attribute='value']/parent::tagname
+3.child
+-Node below the self node is called as child node/element
+-Traverse all child element of the current html tag
+-syntax: //*[@attribute='value']/child::tagname
+4.ancestor
+-Node above parent node is called as ancestor node/element
+-Traverse all the ancestor elements(grandparents,parent etc) of the current html tag
+-syntax: //*[@attribute='value']/ancestor::tagname
+5.descendant
+-Node below child node of  is called as descendant
+-Traverse all descendant element(child node,grandchild node etc) of the current html tag
+-syntax: //*[@attribute='value']/descendant::tagname
+6.following
+-Elements parallel & below to self node is called as following nodes
+-Traverse all element that comes after the current tag
+-syntax: //*[@attribute='value']/following::tagname
+7.following-sibling
+-Nodes comes under following and which parallel/equivalent nodes to self node is called as following-sibling
+-Traverse from current html tag to next sibling html tag
+-syntax: //current html tag[@attribute='value']/following-sibling::sibling tag[@attribute='value']
+8.preceding
+-Elements parallel & above to self node is called as following nodes
+-Traverse all nodes that comes before the current html tag
+-syntax: //*[@attribute='value']/preceding::tagname
+9.preceding-sibling
+-Nodes comes under preceding and which parallel/equivalent nodes to self node is called as preceding-sibling
+-Traverse from current html tag to previous sibling html tag
+-syntax: //current html tag[@attribute='value']/preceding-sibling::previous tag[@attribute='value']
