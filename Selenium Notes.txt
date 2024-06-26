@@ -103,3 +103,25 @@ d.tag class attribute
 -Nodes comes under preceding and which parallel/equivalent nodes to self node is called as preceding-sibling
 -Traverse from current html tag to previous sibling html tag
 -syntax: //current html tag[@attribute='value']/preceding-sibling::previous tag[@attribute='value']
+
+*Xpath of SVG Element:
+-syntax: //*[local-name()='svg']
+
+*Xpath of elements having more spaces in text value
+-syntax: //tagname[normalize-space()='text value']
+
+**Selenium basic commands:
+1.Application commands
+get-launching application URL
+title-to capture the title of the current webpage
+current_url-to capture current url of the webpage
+page_source-to capture source code of the page
+2.conditional commands
+is_displayed()
+is_enabled()
+is_selected()
+3.browser commands
+close()-close single browser window which has driver focus
+quit()-close multiple browser windows (all opened browser window).Internally killing driver/browser process
+4.navigational commands
+5.wait commands
