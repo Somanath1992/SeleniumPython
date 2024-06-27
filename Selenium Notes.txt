@@ -124,4 +124,14 @@ is_selected()
 close()-close single browser window which has driver focus
 quit()-close multiple browser windows (all opened browser window).Internally killing driver/browser process
 4.navigational commands
+back()
+forward()
+refresh()
 5.wait commands
+
+** Difference between find_element() & find_elements():
+1.find_element() returns single webelement
+2.If we pass locator which points to multiple elements, find_element() will always returns first webelement
+3.If we pass wrong locator which does not locate any element on webpage this method will throw NoSuchElement Exception
+4.find_elements() returns list of webelement
+2.find_elements() will not throw any exception if locator is not matched, it will return empty list
