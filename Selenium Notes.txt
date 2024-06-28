@@ -135,3 +135,7 @@ refresh()
 3.If we pass wrong locator which does not locate any element on webpage this method will throw NoSuchElement Exception
 4.find_elements() returns list of webelement
 5.find_elements() will not throw any exception if locator is not matched, it will return empty list
+
+** Difference between text and get_attribute():
+1.text --> returns inner text of the element if available otherwise it will not return anything
+2.get_attribute() --> Will return attribute value of the element
