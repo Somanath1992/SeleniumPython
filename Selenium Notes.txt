@@ -128,7 +128,25 @@ back()
 forward()
 refresh()
 5.wait commands
-
+*time.sleep():
+-Accepts time in seconds
+-It is python wait not selenium
+-It will reduce the performance of script as it pauses execution of code
+-If element is not available withing given wait time then it will throw exception
+*implicit wait
+-It is selenium wait
+-If we write implicit wait after driver object initialization then it will be applicable for all elements
+-It will not impact performance as if element is available before wait time it will proceed with further execution
+-If element is not available withing given wait time then it will throw exception, this can be overcome by using
+try cath block to avoid stopping of further code execution
+*explicit wait
+-It is selenium wait
+-Explicit wait works based on condition
+-We can handle exceptions with this wait
+-To use this wait we need to declare webdriver wait and then implement explicit wait
+-For different element we need to use multiple times
+-We can use poll_frequency to check element after specific time of frequency
+-Find element method is not necessary to use this wait, we can directly pass locator with condition
 ** Difference between find_element() & find_elements():
 1.find_element() returns single webelement
 2.If we pass locator which points to multiple elements, find_element() will always returns first webelement
@@ -139,3 +157,4 @@ refresh()
 ** Difference between text and get_attribute():
 1.text --> returns inner text of the element if available otherwise it will not return anything
 2.get_attribute() --> Will return attribute value of the element
+
