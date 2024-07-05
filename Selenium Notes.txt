@@ -162,3 +162,12 @@ try cath block to avoid stopping of further code execution
 1.Internal Link
 2.External Link
 3.Broken Link
+
+**Alerts:
+-To handle alerts, capture alert window using driver.switch_to.alert
+-There are text, accept(), dismiss() methods to handle elements on Alert
+
+** Authentication Pop Up
+-To handle Authentication pop up , pass username and url along with url(inject username and password with url)
+-Syntax: https://username:password@test.com
+
