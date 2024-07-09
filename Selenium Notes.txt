@@ -171,3 +171,6 @@ try cath block to avoid stopping of further code execution
 -To handle Authentication pop up , pass username and url along with url(inject username and password with url)
 -Syntax: https://username:password@test.com
 
+**Frames/iframe
+-Selenium 3- switch_to_frame()
+-Selenium 4- switch_to.frame(name of the frame/id of the frame/webelement/index of frame)
