@@ -174,3 +174,8 @@ try cath block to avoid stopping of further code execution
 **Frames/iframe
 -Selenium 3- switch_to_frame()
 -Selenium 4- switch_to.frame(name of the frame/id of the frame/webelement/index of frame)
+
+**Browser Windows
+-switch_to.window(Browser Window ID)
+-current_window_handle --Return windowId of single browser window
+-current_window_handles --Returns window id's of multiple browser windows
