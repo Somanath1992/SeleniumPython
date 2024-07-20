@@ -179,3 +179,11 @@ try cath block to avoid stopping of further code execution
 -switch_to.window(Browser Window ID)
 -current_window_handle --Return windowId of single browser window
 -current_window_handles --Returns window id's of multiple browser windows
+
+** Mouse Operations
+-class - ActionChains
+-Operations:
+1) Mouse hover - move_to_element(element)
+2) Right click - context_click(element)
+3) Double click - double_click(element)
+4) Drag and drop - drag_and_drop(source,target)
