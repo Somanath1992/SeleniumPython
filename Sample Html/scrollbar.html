@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: auto; /* Ensure horizontal scroll is enabled */
+            white-space: nowrap; /* Prevent content from wrapping */
+        }
+        .scroll-container {
+            width: 2000px; /* Set a large width to enable scrolling */
+            height: 100vh; /* Full viewport height */
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+        .item {
+            display: inline-block;
+            width: 300px;
+            height: 100%;
+            margin: 0 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 100vh; /* Center text vertically */
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>
