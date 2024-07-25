@@ -187,3 +187,6 @@ try cath block to avoid stopping of further code execution
 2) Right click - context_click(element)
 3) Double click - double_click(element)
 4) Drag and drop - drag_and_drop(source,target)
+
+** Mime type of the files can be found:
+-https://www.sitepoint.com/mime-types-complete-list/
