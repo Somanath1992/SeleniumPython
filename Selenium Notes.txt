@@ -190,3 +190,8 @@ try cath block to avoid stopping of further code execution
 
 ** Mime type of the files can be found:
 -https://www.sitepoint.com/mime-types-complete-list/
+
+**Headless mode / Headless browser testing
+1.Execution will run in background, and we can perform other task on our device without affecting execution
+2.Performance will be increased by reducing execution time.This will be observed for bulk script execution
+3.Disadvantage is we can not see UI
