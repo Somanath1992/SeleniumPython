@@ -200,4 +200,6 @@ try cath block to avoid stopping of further code execution
 -For handling exel file we need to use python module called 'openpyxl'
 -It doesn't come with python , so we need to install it separately
 -It only supports file extension '.xlsx' & '.xlsm'
+-For connecting database we need to use module called mysql-connector-python/any database specific connector
+
 
