@@ -202,4 +202,23 @@ try cath block to avoid stopping of further code execution
 -It only supports file extension '.xlsx' & '.xlsm'
 -For connecting database we need to use module called mysql-connector-python/any database specific connector
 
+**PyTest Framework:
+-Unit Testing Framework designed for python developers
+-It is a framework by which we can use certain features in automation
+1.Fixtures
+2.Reports
+3.Parallel Testing
+4.Skip the tests
+5.Group Tests
+7.Batch Testing
+8.Parameterization
+9.Reports etc.
+-Structure - Project->Package/Directory->Modules(.py)->class->Test Methods
+-Naming Conventions for PyTest:
+1.File names should start with test_ or ends with _test, as test_example.py or example_test.py
+2.Class names should start with "Test", as in TestExample
+3.Test method names should start with "test",as in test_example()
+-PyTest modules can be run with 2 ways, using python interpreter and from terminal which uses PyTest interpreter
+-Syntax to run single module is pytest -v -s dir\file_name.py & to run all use pytest -v -s dir
+-To run specific method from module we have syntax pytest -v -s dir\file_name.py::classname::methodname
 
